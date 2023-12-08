@@ -19,6 +19,7 @@ class LogisticRegressionWrapper:
     
     def __init__(self,*args,**kwargs):
         self.model = linear_model.LogisticRegression(*args,**kwargs)
+        self.feature_names = []
 
     def fit(self,X,y):
         self.model.fit(X,y)
